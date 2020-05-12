@@ -12,3 +12,6 @@ alias engine_migrations='be rake some_engine:install:migrations'
 
 alias last_commit_files='git diff-tree --no-commit-id --name-only -r HEAD | xargs echo -n'
 alias how_big='du -h | sort -hr | head'
+
+alias drysync='rsync -avP --dry-run /source/dir /target/dir'
+alias nsync='rsync -avP /source/dir /target/dir'
